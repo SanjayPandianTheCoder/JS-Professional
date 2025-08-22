@@ -5,5 +5,11 @@ btn.addEventListener("click",()=>{
 })
 
 function promptMessage(){
-    window.prompt("How old are you?",0);
+    var age = window.prompt("How old are you?",0);
+    if(Number(age) >= 18){
+        alert("You are accepted");
+    }
+    else{
+        alert("You are rejected");
+    }
 }
